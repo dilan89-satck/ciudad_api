@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "f8afd16d-f5ab-41e7-afaa-f8d898e92a62",
+		"name": "Prog3_Ciudad_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49419006",
+		"_collection_link": "https://dgiraldo115746-7616301.postman.co/workspace/dilan's-Workspace~e6c6c4ad-ad1d-4657-8502-be9be81b5ca6/collection/49419006-f8afd16d-f5ab-41e7-afaa-f8d898e92a62?source=collection_link"
+	},
+	"item": [
+		{
+			"name": "saludo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/prog3/hola campeones y campeonas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prog3",
+						"hola campeones y campeonas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
