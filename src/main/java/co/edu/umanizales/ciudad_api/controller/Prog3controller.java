@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class Prog3controller {
 
-    @GetMapping("hola campeones")
+    @GetMapping("hola campeones y campeonas")
     public String getHola() {
-        System.out.println("Hola Camepeones");
-        return "Hola Campeones";
+        System.out.println("Hola Camepeones y Campeonas");
+        return "Hola Campeones y Campeonas";
     }
 }
