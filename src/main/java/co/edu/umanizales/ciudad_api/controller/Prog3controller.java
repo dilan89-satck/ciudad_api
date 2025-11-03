@@ -1,9 +1,8 @@
 package co.edu.umanizales.ciudad_api.controller;
 
 
-import co.edu.umanizales.ciudad_api.model.AlumbradoP;
-import co.edu.umanizales.ciudad_api.model.TipodeServicio;
-import co.edu.umanizales.ciudad_api.model.TransporteP;
+import co.edu.umanizales.ciudad_api.model.Typeofservice;
+import co.edu.umanizales.ciudad_api.model.TransportP;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,25 +26,25 @@ public class Prog3controller {
     @RestController
     @RequestMapping("transportep")
     public class Transporte{
-        private final TransporteP transporte = new TransporteP("linea 1", 300);
+        private final TransportP transport = new TransportP("line1 ", 300, 45);
 //se llama  TransporteP para crear la instancia con los parametros
         //
 
 
         // endpoint
-        @GetMapping("/ruta")
-        public String getRuta() {
-            return transporte.getRuta();
+        @GetMapping("/route")
+        public String getroute() {
+            return transport.getRoute();
         }
 
-        @GetMapping("/pasajeros")
-        public int getCantidadpasajeros() {
-            return transporte.getCantidadpasajeros();
+        @GetMapping("/passengers")
+        public int Numberpassengers() {
+            return transport.getNumberpassengers();
         }
 
-        @GetMapping("/transporte")
-        public TransporteP getTransporteCompleto() {
-            return transporte;
+        @GetMapping("/drivers")
+        public int  Numberdrivers() {
+            return transport.getNumberdrivers();
         }
     }//
     //
@@ -53,51 +52,19 @@ public class Prog3controller {
 // tipo de servicio
 
     @RestController
-    @RequestMapping("tiposdeser")
+    @RequestMapping("Typeofservice")
 public class tiposservicio {
-        private final TipodeServicio servicio = new TipodeServicio("transporte ", 3, true);
-
-        @GetMapping("/NombredeServicio")
-        public String getnombredeservicio() {
-            return servicio.getNombredeServicio();
-        }
-
-        @GetMapping("/Comuna")
-        public int getcomuna() {
-            return servicio.getComuna();
-        }
-
-        @GetMapping("/Estado")
-        public boolean getestado() {
-            return servicio.getEstado();
-        }//
-        //
-
-// alumbrado
+        private final Typeofservice servicio = new Typeofservice("transporte ", 3, "activo");
 
 
-    @RestController
-    @RequestMapping("alumbrado")
-        public class Alumbrado {
-        private final AlumbradoP decoracion = new AlumbradoP("10/12","maria" , "jose");
 
-        @GetMapping("/fecha")
-        public String getFecha() {
-            return decoracion.getFecha();
-        }
 
-        @GetMapping("/zona")
-        public String getZona() {
-            return decoracion.getZona();
-        }
+// roadsp
 
-        @GetMapping("7empleado")
-        public String getEmpleado() {
-            return decoracion.getEmpleado();
-        }
+
+
     }//
         //
 
 
-    }}
-
+    }
