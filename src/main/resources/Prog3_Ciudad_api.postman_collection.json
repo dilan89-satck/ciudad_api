@@ -8,19 +8,19 @@
 	},
 	"item": [
 		{
-			"name": "saludo",
+			"name": "greeting",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/prog3/hola campeones y campeonas",
+					"raw": "localhost:8080/prog3/hello champions",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"prog3",
-						"hola campeones y campeonas"
+						"hello champions"
 					]
 				}
 			},

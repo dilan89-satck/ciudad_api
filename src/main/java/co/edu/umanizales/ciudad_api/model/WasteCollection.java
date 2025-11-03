@@ -2,25 +2,25 @@ package co.edu.umanizales.ciudad_api.model;
 
 public class WasteCollection {
 
-        private String amounttrash;
-        private int  numberemployees;
-        private String frequency;
+    private String amountTrash;
+    private int numberEmployees;
+    private String frequency;
 
-        public WasteCollection(String Amounttrash, int Numberemployees, String Frequency){
-            this.amounttrash = Amounttrash;
-            this.numberemployees = Numberemployees;
-            this.frequency= Frequency;
-        }
-        public String getAmounttrash() { return this.amounttrash;}
-        public String getFrequency() { return  this.frequency;}
-        public  int getNumberemployees() { return this.numberemployees;}
+    public WasteCollection(String amountTrash, int numberEmployees, String frequency) {
+        this.amountTrash = amountTrash;
+        this.numberEmployees = numberEmployees;
+        this.frequency = frequency;
+    }
+    public String getAmountTrash() { return this.amountTrash; }
+    public String getFrequency() { return this.frequency; }
+    public int getNumberEmployees() { return this.numberEmployees; }
 
     @Override
-    public String   toString() {
+    public String toString() {
         return "WasteCollection{" +
-                "Amounttrash ='" + amounttrash + '\'' +
-                ",Frequency  =" + frequency + '\'' +
-                ", Number employees =" + numberemployees +
+                "amountTrash='" + amountTrash + '\'' +
+                ", frequency='" + frequency + '\'' +
+                ", numberEmployees=" + numberEmployees +
                 '}';
 
     }}

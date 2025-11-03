@@ -13,58 +13,54 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("prog3")
 
 public class Prog3controller {
-    // para saludar
-    @GetMapping("hola campeones y campeonas")
-    public String getHola() {
-        System.out.println("Hola Camepeones y Campeonas");
-        return "Hola Campeones y Campeonas";
-    }//
-//
+    // greeting endpoint
+    @GetMapping("hello champions")
+    public String getHello() {
+        System.out.println("Hello Champions");
+        return "Hello Champions";
+    }
 
-    //  transporte
+    // transport
 
     @RestController
     @RequestMapping("transportep")
-    public class Transporte{
+    public class Transport {
         private final TransportP transport = new TransportP("line1 ", 300, 45);
-//se llama  TransporteP para crear la instancia con los parametros
-        //
+        // TransportP is called to create the instance with the parameters
 
 
         // endpoint
         @GetMapping("/route")
-        public String getroute() {
+        public String getRoute() {
             return transport.getRoute();
         }
 
         @GetMapping("/passengers")
-        public int Numberpassengers() {
+        public int getNumberPassengers() {
             return transport.getNumberpassengers();
         }
 
         @GetMapping("/drivers")
-        public int  Numberdrivers() {
+        public int getNumberDrivers() {
             return transport.getNumberdrivers();
         }
-    }//
-    //
+    }
 
-// tipo de servicio
+    // service type
 
     @RestController
     @RequestMapping("Typeofservice")
-public class tiposservicio {
-        private final Typeofservice servicio = new Typeofservice("transporte ", 3, "activo");
+    public class ServiceType {
+        private final Typeofservice service = new Typeofservice("transport ", 3, "active");
 
 
 
 
-// roadsp
+        // roadsp
 
-
-
-    }//
-        //
 
 
     }
+
+
+}

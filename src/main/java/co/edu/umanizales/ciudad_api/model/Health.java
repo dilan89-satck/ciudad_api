@@ -2,21 +2,21 @@ package co.edu.umanizales.ciudad_api.model;
 
 public class Health {
 
-// record
-        private double numberdeaths  ;
-        private double recovereds;
+    // record
+    private double numberDeaths;
+    private double recovered;
 
-        public Health(int Numberdeaths, int Recovereds){
-            this.numberdeaths = Numberdeaths;
-            this.recovereds = Recovereds;
+    public Health(int numberDeaths, int recovered) {
+        this.numberDeaths = numberDeaths;
+        this.recovered = recovered;
 
-        }
-        public double getRecovered(){ return this.recovereds;}
-        public double getNumberdeaths(){ return this.numberdeaths;}
+    }
+    public double getRecovered() { return this.recovered; }
+    public double getNumberDeaths() { return this.numberDeaths; }
 
 
-    public static Health Mostrar(){
-        return new Health (5, 20);
+    public static Health show() {
+        return new Health(5, 20);
     }
 
 }

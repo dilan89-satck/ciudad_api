@@ -1,21 +1,21 @@
 package co.edu.umanizales.ciudad_api.model;
-// AGREGADO
+// ADDED
 
 public class Citizens {
-    private int numbercitizens;
-    private String mostpopulatedarea;
+    private int numberCitizens;
+    private String mostPopulatedArea;
 
-    public Citizens( int Numbercitizens, String Mostpopulatedarea) {
-        this.numbercitizens = Numbercitizens;
-        this.mostpopulatedarea= Mostpopulatedarea;
+    public Citizens(int numberCitizens, String mostPopulatedArea) {
+        this.numberCitizens = numberCitizens;
+        this.mostPopulatedArea = mostPopulatedArea;
 
     }
-    public int getNumbercitizens(){ return this.numbercitizens;}
-    public String getMostpopulatedarea() { return this.mostpopulatedarea; }
+    public int getNumberCitizens() { return this.numberCitizens; }
+    public String getMostPopulatedArea() { return this.mostPopulatedArea; }
 
 
-    public static Citizens Mostrar(){
-        return new Citizens(200000,"santa ana");
+    public static Citizens show() {
+        return new Citizens(200000, "santa ana");
     }
 
 

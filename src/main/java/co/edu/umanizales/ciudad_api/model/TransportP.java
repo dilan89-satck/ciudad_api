@@ -1,27 +1,28 @@
 package co.edu.umanizales.ciudad_api.model;
-// CLASES
+// CLASSES
 public class TransportP {
     private String route;
-    private int numberpassengers;
-private int numberdrivers;
+    private int numberPassengers;
+    private int numberDrivers;
 
 
-    public TransportP(String Route , int Numberpassengers, int Numberdrivers) {
-        this.route = Route;
-        this.numberpassengers = Numberpassengers;
-        this.numberdrivers= Numberdrivers;
-}
-    // getter, es para utilizar los atributos del encaposulamiento
-public String getRoute() {return this.route;}
-public int getNumberpassengers() { return  this.numberpassengers;}
-    public int getNumberdrivers() {return this.numberdrivers;}
+    public TransportP(String route, int numberPassengers, int numberDrivers) {
+        this.route = route;
+        this.numberPassengers = numberPassengers;
+        this.numberDrivers = numberDrivers;
+    }
+    // getter, used to access encapsulation attributes
+    public String getRoute() { return this.route; }
+    public int getNumberpassengers() { return this.numberPassengers; }
+    public int getNumberdrivers() { return this.numberDrivers; }
 
     //
     @Override
-    public String   toString() {
-        return "TransporteP{" +
-                "='route" + route + '\'' +
-                ", =numberpassengers" + numberpassengers + "numberdrivers" + numberdrivers +
+    public String toString() {
+        return "TransportP{" +
+                "route='" + route + '\'' +
+                ", numberPassengers=" + numberPassengers +
+                ", numberDrivers=" + numberDrivers +
                 '}';
     }
 }
