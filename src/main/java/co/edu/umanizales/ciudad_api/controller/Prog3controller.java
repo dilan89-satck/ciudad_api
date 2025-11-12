@@ -20,32 +20,6 @@ public class Prog3controller {
         return "Hello Champions";
     }
 
-    // transport
-
-    @RestController
-    @RequestMapping("transportep")
-    public class Transport {
-        private final TransportP transport = new TransportP("line1 ", 300, 45);
-        // TransportP is called to create the instance with the parameters
-
-
-        // endpoint
-        @GetMapping("/route")
-        public String getRoute() {
-            return transport.getRoute();
-        }
-
-        @GetMapping("/passengers")
-        public int getNumberPassengers() {
-            return transport.getNumberpassengers();
-        }
-
-        @GetMapping("/drivers")
-        public int getNumberDrivers() {
-            return transport.getNumberdrivers();
-        }
-    }
-
     // service type
 
     @RestController

@@ -7,8 +7,8 @@ public class Roadsp {
     private Zone zone;
     private String incidents;
 
-    public Roadsp(String damages, Zone zone, String incidents) {
-        this.damages = damages;
+    public Roadsp(String Damages, Zone zone, String incidents) {
+        this.damages = Damages;
         this.zone = zone;
         this.incidents = incidents;
     }
@@ -22,7 +22,7 @@ public class Roadsp {
     //
     public static Roadsp show() {
         Zone z = new Zone("san lorenzo", "Commune 4", "stratum 2");
-        return new Roadsp("roads with potholes", z, "five accidents");
+        return new Roadsp("Traffic light damaged and two cars with minor front-end damage", z, "five accidents");
     }
 
 
